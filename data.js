@@ -23,6 +23,7 @@ var myVar;
                     $("#total").html(formatter.format(total));
                     $("#totalDeath").html(formatter.format(totalDeath));
                     $("#totalRecovered").html(formatter.format(totalRecovered));
+                    $("#paises").append(data.Countries.length + " Países");
 
                     var date = data.Date;
                     var dateD = "";
@@ -59,10 +60,10 @@ var myVar;
                         var countryDeath = data.Countries[i].TotalDeaths;
                         var countryRecovered = data.Countries[i].TotalRecovered;
                         $("#countries").append(
-                            "<div class='col-md-4'>" +
+                            "<div class='col-md-2'>" + 
                             "<div class='card'>" +
                             "<div class='card-body'>" +
-                            "<h5 class='card-title'>" + country + "</h5>" +
+                            "<h5 class='card-title'>"+ (i+1) + " - " + country + "</h5>" +
                             "<p class='card-text'>Total de casos: <b class='text-primary'>" + formatter.format(countryTotal) + "</b></p>" +
                             "<p class='card-text'>Total de mortes: <b id='tDPC'class='text-danger'>" + formatter.format(countryDeath) + "</b></p>" +
                             "<p class='card-text'>Total de recuperados: <b class='text-success'>" + formatter.format(countryRecovered) + "</b></p>" +
