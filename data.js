@@ -16,7 +16,7 @@ var myVar;
                 url: "https://api.covid19api.com/summary",
                 method: "GET",
                 success: function (data) {
-                    //console.log(data);
+                    console.log(data);
                     var total = data.Global.TotalConfirmed;
                     var totalDeath = data.Global.TotalDeaths;
                     var totalRecovered = data.Global.TotalRecovered;

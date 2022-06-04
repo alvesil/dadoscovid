@@ -1,8 +1,17 @@
-.container {
+.container-fluid {
+    width: 100%;
     margin-top: 50px;
     background-color: #f8f9fa;
-    padding: 20px;
     border-radius: 30px;
+}
+
+body{
+    padding: 50px;
+}
+
+.card, .form-control{
+    background-color: #cde;
+    border-radius: 15px;
 }
 
 #demo {
